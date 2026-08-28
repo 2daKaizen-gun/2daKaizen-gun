@@ -1,0 +1,52 @@
+# 置き場所:  .github/workflows/metrics.yml
+#
+# 何をする?:  自分のリポジトリ内で github-metrics.svg を生成する。
+#             外部の共有サーバーに依存しないので常に安定して表示される。
+#             (stats / top-languages / activity / streak を1枚に統合)
+#
+# private 貢献も出したい場合:
+#   1. Classic PAT を作成 (scope: read:user, repo)
+#   2. リポジトリ Settings → Secrets and variables → Actions →
+#      New repository secret →  Name: METRICS_TOKEN  Value: <PAT>
+#   3. GitHub の Settings → Profile で
+#      「Include private contributions on my profile」を ON
+#   PAT が無くても公開分だけで動く (METRICS_TOKEN が空なら既定トークンにフォールバック)
+
+name: Metrics
+on:
+  schedule:
+    - cron: "30 18 * * *"    # 毎日 (JST 翌03:30)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: 2daKaizen-gun
+          filename: github-metrics.svg
+          template: classic
+          config_timezone: Asia/Seoul
+          base: header, activity, community, repositories, metadata
+
+          # 言語 (top languages の代わり)
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+          # 習慣: いつ・どれだけ書くか (activity graph + streak の代わり)
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+          # 一年のコミット密度を等角カレンダーで
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year

@@ -131,20 +131,17 @@ Bridging Korea and Japan with AI and code.
 
 <br>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=2daKaizen-gun&show_icons=true&count_private=true&hide_border=true&title_color=58A6FF&icon_color=58A6FF" alt="stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=2daKaizen-gun&hide_border=true&stroke=58A6FF&ring=58A6FF&fire=F85149" alt="streak" />
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=2daKaizen-gun&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&hide_border=true" alt="activity graph" />
-
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=2daKaizen-gun&layout=compact&hide_border=true&langs_count=8&title_color=58A6FF" alt="top languages" />
+<!-- 統計・言語・習慣を1枚に : metrics.yml がリポジトリ内で生成（外部サーバー非依存で常に安定） -->
+<img src="./github-metrics.svg" alt="GitHub metrics — activity, languages, habits" width="100%">
 
 </div>
 
 <!--
   習慣が「見える」ポイント：
-  ・streak-stats = 連続コミット日数（毎日コツコツ＝継続力、日本の採用で刺さる）
-  ・activity-graph = いつ・どれだけ書くかの折れ線（作業リズム）
-  ・3D calendar   = 一年の密度を立体で
+  ・isocalendar = 一年のコミット密度を等角カレンダーで
+  ・habits      = いつ・どれだけ書くか（作業リズム＝継続力の証拠）
+  ・languages   = 使用言語の内訳
+  すべて自分のリポジトリ内で生成されるSVGなので、共有サーバーの不調に左右されない。
 -->
 
 ---
