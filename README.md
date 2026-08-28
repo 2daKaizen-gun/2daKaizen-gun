@@ -1,6 +1,6 @@
 <!--
   ╭─────────────────────────────────────────────────────────────╮
-  │  GitHub プロフィール README  ―  権イゴン / Kwon Yigun         │
+  │  GitHub プロフィール README  ―  権イゴン / Kwon Leegun        │
   │  置き場所:  リポジトリ  2daKaizen-gun/2daKaizen-gun          │
   │            (アカウント名と同じ名前・Public・README.md)        │
   │  3D グラフを出すには profile-3d.yml も一緒に入れてください    │
@@ -9,7 +9,7 @@
 
 <div align="center">
 
-# 権イゴン ・ Kwon Yigun
+# 権イゴン ・ Kwon Leegun
 
 **韓国と日本を、AI とコードでつなぐ。**
 Bridging Korea and Japan with AI and code.
