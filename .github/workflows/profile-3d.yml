@@ -1,0 +1,36 @@
+# 置き場所:  2daKaizen-gun/2daKaizen-gun リポジトリの
+#            .github/workflows/profile-3d.yml
+#
+# 何をする?:  毎日 UTC 18:00 に、あなたのコミット履歴から
+#             3D等高線グラフ(SVG)を作って profile-3d-contrib/ に置く。
+#             README がその SVG を表示する。
+#
+# 準備:  リポジトリ Settings → Actions → General →
+#        「Workflow permissions」を "Read and write permissions" にする
+#        (これがないと SVG をコミットで push できずに失敗します)
+
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 毎日 1回 (UTC 18:00 = JST 翌03:00)
+  workflow_dispatch:        # 手動実行ボタンも付く
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & push
+        run: |
+          git config user.name  github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A .
+          git commit -m "chore: update 3D contribution graph" || echo "no changes"
+          git push
