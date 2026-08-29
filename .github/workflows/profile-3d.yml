@@ -13,7 +13,7 @@ name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 毎日 1回 (UTC 18:00 = JST 翌03:00)
+    - cron: "0 */6 * * *"  # 6時間ごと (00/06/12/18 UTC) — 当日のコミットを早く反映
   workflow_dispatch:        # 手動実行ボタンも付く
 
 jobs:

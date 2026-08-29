@@ -15,7 +15,7 @@
 name: Metrics
 on:
   schedule:
-    - cron: "30 18 * * *"    # 毎日 (JST 翌03:30)
+    - cron: "30 */6 * * *"   # 6時間ごと (00:30/06:30/12:30/18:30 UTC)
   workflow_dispatch:
   push:
     branches: [main]
