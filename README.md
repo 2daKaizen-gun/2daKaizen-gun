@@ -1,12 +1,3 @@
-<!--
-  ╭─────────────────────────────────────────────────────────────╮
-  │  GitHub プロフィール README  ―  権イゴン / Kwon Leegun        │
-  │  置き場所:  リポジトリ  2daKaizen-gun/2daKaizen-gun          │
-  │            (アカウント名と同じ名前・Public・README.md)        │
-  │  3D グラフを出すには profile-3d.yml も一緒に入れてください    │
-  ╰─────────────────────────────────────────────────────────────╯
--->
-
 <div align="center">
 
 # 権イゴン ・ Kwon Leegun
@@ -50,12 +41,12 @@ Bridging Korea and Japan with AI and code.
 > ビジネス日本語の **本音 / 建前** を AI が解析し、非ネイティブのエンジニアに敬語・間接表現・礼儀スコアと返信戦略を提示するプロダクト。
 > An AI analyzer that reads the *honne* (true intent) behind the *tatemae* (public face) of business Japanese — politeness / indirectness / etiquette scores and response strategies for non-native engineers.
 
-- **技術 / Stack** : `Java` `Spring Boot` `Next.js` `TypeScript` `Gemini (Google GenAI)` `MySQL` `Docker` `GitHub Actions → AWS EC2`
+- **技術 / Stack** : `Java` `Spring Boot` `Next.js` `TypeScript` `Gemini (Google GenAI)` `MySQL` `Docker` `GitHub Actions (CI)`
 - **役割 / Role** : 個人開発（バックエンド `kotona-analyzer` ＋ フロント `kotona-web` の2リポジトリ）
 - **見どころ / Highlights** :
   - 本音/建前を分離し、Red Flag と対処法まで提示。返信は Standard / Soft / Firm の3段階生成
-  - スキーマ強制 JSON で Gemini 出力を安定化。`docker compose up` 一発起動＋CI/CD で EC2 デプロイ
-- 🔗 [kotona-analyzer](https://github.com/2daKaizen-gun/kotona-analyzer) ・ [kotona-web](https://github.com/2daKaizen-gun/kotona-web)
+  - スキーマ強制 JSON で Gemini 出力を安定化。`docker compose up` 一発起動、push ごとに CI でビルド・テスト
+- 🔗 [Live Demo](https://kotona-web.vercel.app)（デモモード）・ [kotona-analyzer](https://github.com/2daKaizen-gun/kotona-analyzer) ・ [kotona-web](https://github.com/2daKaizen-gun/kotona-web)
 
 ### 🌌 Pale Blue Code — 系外惑星ハンター
 > TESS 衛星の **実観測データ** から、まだ誰もカタログに載せていない惑星候補を単一トランジット法で探すフルスタックアプリ。自動パイプラインが盲目になる領域を狙う。
@@ -65,8 +56,8 @@ Bridging Korea and Japan with AI and code.
 - **役割 / Role** : 個人開発（設計・実装・検証すべて）
 - **見どころ / Highlights** :
   - 5つの形状ゲート(edge / coherence / flare / symmetry / baseline)で計器由来の偽検出を棄却 ―「有意性は必要条件、十分条件ではない」
-  - 各星の **実測感度** から「本当に見えたはずの最小惑星サイズ」を算出する正直な null。テスト pytest 195 / vitest 217
-- 🔗 [Repository](https://github.com/2daKaizen-gun/pale-blue-code)
+  - 各星の **実測感度** から「本当に見えたはずの最小惑星サイズ」を算出する正直な null。テスト pytest 244 / vitest 250
+- 🔗 [Live Demo](https://pale-blue-code.vercel.app) ・ [Repository](https://github.com/2daKaizen-gun/pale-blue-code)
 
 ### 📱 冴え (Sae) — 90秒で脳の冴えを測る
 > ウェアラブル不要。反応時間テスト(PVT)で「睡眠負債」による脳の覚醒度を毎日 0–100 で可視化する iOS ネイティブアプリ。自社開発企業向けポートフォリオ。
@@ -116,7 +107,6 @@ Bridging Korea and Japan with AI and code.
 **AI / Infra**
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
 
@@ -126,7 +116,7 @@ Bridging Korea and Japan with AI and code.
 
 <div align="center">
 
-<!-- 3D コミットカレンダー : profile-3d.yml が毎日生成 -->
+<!-- 3D コミットカレンダー : profile-3d.yml が6時間ごとに生成 -->
 <img src="./profile-3d-contrib/profile-season-animate.svg" alt="3D contribution calendar" width="100%">
 
 <br>

@@ -1,7 +1,7 @@
 # 置き場所:  2daKaizen-gun/2daKaizen-gun リポジトリの
 #            .github/workflows/profile-3d.yml
 #
-# 何をする?:  毎日 UTC 18:00 に、あなたのコミット履歴から
+# 何をする?:  6時間ごと (00/06/12/18 UTC) に、あなたのコミット履歴から
 #             3D等高線グラフ(SVG)を作って profile-3d-contrib/ に置く。
 #             README がその SVG を表示する。
 #
