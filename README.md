@@ -1,6 +1,6 @@
 <div align="center">
 
-# 権イゴン ・ Kwon Leegun
+# クォン・イゴン ・ Kwon Leegun
 
 **韓国と日本を、AI とコードでつなぐ。**
 Bridging Korea and Japan with AI and code.
