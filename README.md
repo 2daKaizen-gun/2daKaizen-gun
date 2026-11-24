@@ -25,8 +25,8 @@ Most of these projects started from small problems I ran into while learning Jap
 
 ## 受賞歴 / Awards
 
-- **2026** 企業連携キャップストーンデザイン（기업연계캡스톤디자인）人気賞 ・ バックエンド担当<br>Industry-Linked Capstone Design, Popularity Award (Backend)
-- **2026** 工学コンテスト（공학경진대회）参加賞 ・ フロントエンド担当<br>Engineering Competition, Participation Award (Frontend)
+- **2026.11** 企業連携キャップストーンデザイン（기업연계캡스톤디자인）人気賞 ・ バックエンド担当<br>Industry-Linked Capstone Design, Popularity Award (Backend)
+- **2026.09** 工学コンテスト（공학경진대회）参加賞 ・ フロントエンド担当<br>Engineering Competition, Participation Award (Frontend)
 
 ## Projects
 
