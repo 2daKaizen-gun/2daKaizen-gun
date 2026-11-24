@@ -23,6 +23,11 @@ I build tools for people working between Korea and Japan.<br>
 日本語を勉強する中で不便だったこと（敬語のメール、祝日のずれ、単語の整理など）を、そのままプロジェクトにしてきました。<br>
 Most of these projects started from small problems I ran into while learning Japanese.
 
+## 受賞歴 / Awards
+
+- **2026** 企業連携キャップストーンデザイン（기업연계캡스톤디자인）人気賞 ・ バックエンド担当<br>Industry-Linked Capstone Design, Popularity Award (Backend)
+- **2026** 工学コンテスト（공학경진대회）参加賞 ・ フロントエンド担当<br>Engineering Competition, Participation Award (Frontend)
+
 ## Projects
 
 ### KOTONA
